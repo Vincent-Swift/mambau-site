@@ -50,15 +50,17 @@
 .section-warn { background: var(--c-warn-bg); }
 .section-warn .points i { color: var(--c-warn); }
 
+/* Official App Store badge (artwork served by Apple, not restyled) */
+.store-badge { display: inline-flex; align-items: center; border-radius: 10px; transition: transform 0.2s var(--ease); }
+.store-badge img { height: 50px; width: auto; }
+.store-badge:active { transform: scale(0.98); }
+.launch .store-badge { justify-content: center; }
+.launch .store-badge img { height: 60px; }
+
 /* Closing launch band */
 .launch { background: var(--c-accent); color: var(--c-on-accent); text-align: center; }
 .launch h2 { margin-inline: auto; }
 .launch p { max-width: 46ch; margin: 0 auto 2rem; opacity: 0.9; font-size: var(--text-lead); }
-.launch .btn { background: var(--c-on-accent); color: var(--c-accent-deep); }
-.launch .btn:hover { background: var(--c-tint); color: var(--c-accent-deep); }
-@media (prefers-color-scheme: dark) {
-  .launch .btn { color: var(--c-on-accent); background: var(--c-accent-deep); }
-}
 
 /* Scroll reveal: phones rise in as their section enters, to pace the story. */
 @media (prefers-reduced-motion: no-preference) {
