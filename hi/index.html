@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mam: गर्भावस्था में आपका साथी</title>
   <meta name="description" content="Mam गर्भवती महिलाओं को ब्लड प्रेशर, ब्लड शुगर, भोजन और मन का हाल दर्ज करने में मदद करता है। भरोसेमंद स्रोतों से जानकारी, डेटा आपके फ़ोन पर।">
-  <meta name="theme-color" content="#2f6b5e">
+  <meta name="theme-color" content="#f6f1e8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101814" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Mam: गर्भावस्था में आपका साथी">
   <meta property="og:description" content="Mam गर्भवती महिलाओं को ब्लड प्रेशर, ब्लड शुगर, भोजन और मन का हाल दर्ज करने में मदद करता है। भरोसेमंद स्रोतों से जानकारी, डेटा आपके फ़ोन पर।">
   <meta property="og:url" content="https://mambau.store/hi/">
@@ -25,9 +26,10 @@
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Be+Vietnam+Pro:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css">
   <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="/assets/landing.css">
   <link rel="preload" as="image" href="/assets/shots/hi/home.webp" fetchpriority="high">
   <script defer src="/assets/landing.js"></script>
@@ -61,14 +63,14 @@
   <a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/hi/"><img src="/assets/icon-128.png" alt="" width="36" height="36">Mam</a>
+    <div class="nav-pill">
+      <a class="brand" href="/hi/"><img src="/assets/icon-128.png" alt="" width="32" height="32"><span>Mam</span></a>
       <nav class="nav" aria-label="मुख्य नेविगेशन">
         <a class="nav-optional" href="/hi/#features">सुविधाएँ</a>
         <a href="/hi/privacy/">गोपनीयता</a>
         <a href="/hi/support/">सहायता</a>
         <details class="lang-menu">
-          <summary aria-label="भाषा"><i class="ph ph-translate" aria-hidden="true"></i><span>HI</span></summary>
+          <summary aria-label="भाषा"><i class="ph-light ph-translate" aria-hidden="true"></i><span>HI</span></summary>
           <ul>
             <li><a href="/" hreflang="vi" lang="vi" data-lang="vi">Tiếng Việt</a></li>
             <li><a href="/en/" hreflang="en" lang="en" data-lang="en">English</a></li>
@@ -82,18 +84,21 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap">
-        <div>
-          <h1 id="hero-title" class="rise">गर्भावस्था का हर दिन, थोड़ा और सुकून भरा।</h1>
-          <p class="rise rise-2">ब्लड प्रेशर, ब्लड शुगर, भोजन और मन का हाल दर्ज करें। भरोसेमंद जानकारी, डेटा आपके फ़ोन पर।</p>
-          <div class="hero-actions rise rise-3">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow rise"><span class="eyebrow-dot" aria-hidden="true"></span>Mam</p>
+          <h1 id="hero-title" class="display rise rise-2">गर्भावस्था का हर दिन, थोड़ा और सुकून भरा।</h1>
+          <p class="hero-sub rise rise-3">ब्लड प्रेशर, ब्लड शुगर, भोजन और मन का हाल दर्ज करें। भरोसेमंद जानकारी, डेटा आपके फ़ोन पर।</p>
+          <div class="hero-actions rise rise-4">
             <a class="store-badge" href="https://apps.apple.com/app/id6834347996" rel="noopener">
               <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store से डाउनलोड करें" width="150" height="50">
             </a>
-            <a class="btn btn-ghost" href="#features">सुविधाएँ देखें</a>
+            <a class="btn btn-ghost" href="#features"><span>सुविधाएँ देखें</span><span class="btn-icon" aria-hidden="true"><i class="ph-light ph-arrow-down"></i></span></a>
           </div>
         </div>
-        <div class="hero-phones rise rise-2">
+        <div class="hero-stage">
+          <svg class="sprout" viewBox="0 0 120 160" aria-hidden="true" focusable="false"><path d="M60 158V70M60 92C60 60 38 42 10 44c0 28 20 48 50 48ZM60 76c0-30 22-50 50-48 0 30-22 48-50 48Z"/></svg>
+          <div class="hero-arch" aria-hidden="true"></div>
           <figure class="phone phone-back">
             <img src="/assets/shots/hi/ask.webp" alt="Mam से पूछें स्क्रीन: छोटा जवाब और साथ में स्रोत" width="720" height="1398">
           </figure>
@@ -104,158 +109,194 @@
       </div>
     </section>
 
-    <section id="features" class="section-tint" aria-labelledby="today-title">
-      <div class="wrap showcase">
-        <div class="showcase-media">
-          <figure class="phone reveal">
-            <img src="/assets/shots/hi/home.webp" alt="आज स्क्रीन: सप्ताह 24, शिशु का आकार, ब्लड प्रेशर और ब्लड शुगर लक्ष्य के भीतर" width="720" height="1398" loading="lazy">
-          </figure>
-        </div>
-        <div>
-          <h2 id="today-title">हर सुबह, पता रहे आप कहाँ हैं</h2>
-          <p>गर्भावस्था का सप्ताह, शिशु का आकार, कल की रीडिंग और आज के लिए एक छोटा कदम। ऐप खोलते ही सब सामने, ढूँढना नहीं पड़ता।</p>
-          <ul class="points">
-            <li><i class="ph ph-plant" aria-hidden="true"></i><span>इस हफ़्ते शिशु: वज़न, लंबाई और विकास का एक आसान पड़ाव।</span></li>
-            <li><i class="ph ph-check-square" aria-hidden="true"></i><span>रोज़ का छोटा कदम आप ख़ुद चुनें, जैसे रात के खाने के बाद 20 मिनट टहलना।</span></li>
-            <li><i class="ph ph-baby" aria-hidden="true"></i><span>शिशु की हलचल गिनना, सप्ताह 28 से।</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section aria-labelledby="track-title">
-      <div class="wrap showcase flip">
-        <div class="showcase-media">
-          <figure class="phone reveal">
-            <img src="/assets/shots/hi/tracking.webp" alt="ब्लड शुगर निगरानी स्क्रीन: दिन भर की रीडिंग, लक्ष्य के भीतर या ज़्यादा का निशान और सुझाव" width="720" height="1398" loading="lazy">
-          </figure>
-        </div>
-        <div>
-          <h2 id="track-title">रीडिंग के साफ़ लक्ष्य</h2>
-          <p>ब्लड शुगर, ब्लड प्रेशर और वज़न दर्ज करें। Mam बताता है कौन सी रीडिंग लक्ष्य के भीतर है, कौन सी ज़्यादा है, और आगे क्या करें।</p>
-          <ul class="points">
-            <li><i class="ph ph-chart-line-up" aria-hidden="true"></i><span>पिछले 7 दिनों में लक्ष्य के भीतर रही रीडिंग का प्रतिशत देखें।</span></li>
-            <li><i class="ph ph-lightbulb" aria-hidden="true"></i><span>रीडिंग ज़्यादा होने पर साफ़ सुझाव।</span></li>
-            <li><i class="ph ph-file-pdf" aria-hidden="true"></i><span>जाँच के लिए जाते समय साथ ले जाने को PDF रिपोर्ट (Mam Plus)।</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-tint" aria-labelledby="more-title">
+    <section id="features" class="section" aria-labelledby="today-title">
       <div class="wrap">
-        <h2 id="more-title">पूछें, खाएँ, और मन का ख़याल रखें</h2>
-        <p class="lead">गर्भावस्था की तीन सबसे आम चिंताएँ, हर एक के लिए ऐप में अपनी जगह।</p>
-        <div class="screens">
-          <article class="screen-tile tile-ask">
-            <div>
-              <h3>Mam से पूछें</h3>
-              <p>छोटे और साफ़ जवाब, WHO और FDA जैसे स्रोतों के साथ। इमरजेंसी के संकेत वाले सवाल पर हमेशा जाँच करवाने की सलाह मिलती है, चाहे आज के सवाल ख़त्म हो गए हों।</p>
+        <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>सुविधाएँ</p>
+        <div class="feature-row">
+          <div class="bezel feature-media reveal">
+            <div class="bezel-core media-core">
+              <figure class="phone">
+                <img src="/assets/shots/hi/home.webp" alt="आज स्क्रीन: सप्ताह 24, शिशु का आकार, ब्लड प्रेशर और ब्लड शुगर लक्ष्य के भीतर" width="720" height="1398" loading="lazy">
+              </figure>
             </div>
-            <figure class="phone reveal">
-              <img src="/assets/shots/hi/ask.webp" alt="Mam से पूछें स्क्रीन: छोटा जवाब और साथ में स्रोत" width="720" height="1398" loading="lazy">
-            </figure>
+          </div>
+          <div class="feature-copy">
+            <h2 id="today-title" class="reveal">हर सुबह, पता रहे आप कहाँ हैं</h2>
+            <p class="feature-body reveal">गर्भावस्था का सप्ताह, शिशु का आकार, कल की रीडिंग और आज के लिए एक छोटा कदम। ऐप खोलते ही सब सामने, ढूँढना नहीं पड़ता।</p>
+            <ul class="points">
+              <li class="reveal"><span class="point-icon"><i class="ph-light ph-plant" aria-hidden="true"></i></span><span>इस हफ़्ते शिशु: वज़न, लंबाई और विकास का एक आसान पड़ाव।</span></li>
+              <li class="reveal"><span class="point-icon"><i class="ph-light ph-check-square" aria-hidden="true"></i></span><span>रोज़ का छोटा कदम आप ख़ुद चुनें, जैसे रात के खाने के बाद 20 मिनट टहलना।</span></li>
+              <li class="reveal"><span class="point-icon"><i class="ph-light ph-baby" aria-hidden="true"></i></span><span>शिशु की हलचल गिनना, सप्ताह 28 से।</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-flush" aria-labelledby="track-title">
+      <div class="wrap">
+        <div class="feature-row flip">
+          <div class="bezel feature-media reveal">
+            <div class="bezel-core media-core media-core-warm">
+              <figure class="phone">
+                <img src="/assets/shots/hi/tracking.webp" alt="ब्लड शुगर निगरानी स्क्रीन: दिन भर की रीडिंग, लक्ष्य के भीतर या ज़्यादा का निशान और सुझाव" width="720" height="1398" loading="lazy">
+              </figure>
+            </div>
+          </div>
+          <div class="feature-copy">
+            <h2 id="track-title" class="reveal">रीडिंग के साफ़ लक्ष्य</h2>
+            <p class="feature-body reveal">ब्लड शुगर, ब्लड प्रेशर और वज़न दर्ज करें। Mam बताता है कौन सी रीडिंग लक्ष्य के भीतर है, कौन सी ज़्यादा है, और आगे क्या करें।</p>
+            <ul class="points">
+              <li class="reveal"><span class="point-icon"><i class="ph-light ph-chart-line-up" aria-hidden="true"></i></span><span>पिछले 7 दिनों में लक्ष्य के भीतर रही रीडिंग का प्रतिशत देखें।</span></li>
+              <li class="reveal"><span class="point-icon"><i class="ph-light ph-lightbulb" aria-hidden="true"></i></span><span>रीडिंग ज़्यादा होने पर साफ़ सुझाव।</span></li>
+              <li class="reveal"><span class="point-icon"><i class="ph-light ph-file-pdf" aria-hidden="true"></i></span><span>जाँच के लिए जाते समय साथ ले जाने को PDF रिपोर्ट (Mam Plus)।</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="more-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="more-title" class="reveal">पूछें, खाएँ, और मन का ख़याल रखें</h2>
+          <p class="lead reveal">गर्भावस्था की तीन सबसे आम चिंताएँ, हर एक के लिए ऐप में अपनी जगह।</p>
+        </header>
+        <div class="bento">
+          <article class="bezel tile tile-ask reveal">
+            <div class="bezel-core tile-core">
+              <div class="tile-text">
+                <span class="tile-icon"><i class="ph-light ph-chats-circle" aria-hidden="true"></i></span>
+                <h3>Mam से पूछें</h3>
+                <p>छोटे और साफ़ जवाब, WHO और FDA जैसे स्रोतों के साथ। इमरजेंसी के संकेत वाले सवाल पर हमेशा जाँच करवाने की सलाह मिलती है, चाहे आज के सवाल ख़त्म हो गए हों।</p>
+              </div>
+              <figure class="phone">
+                <img src="/assets/shots/hi/ask.webp" alt="Mam से पूछें स्क्रीन: छोटा जवाब और साथ में स्रोत" width="720" height="1398" loading="lazy">
+              </figure>
+            </div>
           </article>
-          <article class="screen-tile tile-meals">
-            <div>
-              <h3>भोजन</h3>
-              <p>खाने की फ़ोटो लें। Mam कैलोरी, कार्ब्स, प्रोटीन और वसा का अनुमान लगाकर बताता है कि यह आपके लिए ठीक है या नहीं।</p>
+          <article class="bezel tile tile-meals reveal">
+            <div class="bezel-core tile-core">
+              <div class="tile-text">
+                <span class="tile-icon"><i class="ph-light ph-bowl-food" aria-hidden="true"></i></span>
+                <h3>भोजन</h3>
+                <p>खाने की फ़ोटो लें। Mam कैलोरी, कार्ब्स, प्रोटीन और वसा का अनुमान लगाकर बताता है कि यह आपके लिए ठीक है या नहीं।</p>
+              </div>
+              <div class="meals-shot">
+                <img src="/assets/shots/hi/meals.webp" alt="भोजन स्क्रीन: आज की ऊर्जा और दर्ज किए गए व्यंजन, गर्भावस्था के लिए आकलन के साथ" width="720" height="818" loading="lazy">
+              </div>
             </div>
-            <img class="reveal" src="/assets/shots/hi/meals.webp" alt="भोजन स्क्रीन: आज की ऊर्जा और दर्ज किए गए व्यंजन, गर्भावस्था के लिए आकलन के साथ" width="720" height="818" loading="lazy">
           </article>
-          <article class="screen-tile tile-mind">
-            <div>
-              <h3>मन की शांति</h3>
-              <p>रोज़ मन का हाल पूछना, 10 सवालों की EPDS जाँच, 4-7-8 श्वास, डायरी और इंटरपर्सनल थेरेपी पर आधारित 8 हफ़्ते का सफ़र।</p>
+          <article class="bezel tile tile-mind reveal">
+            <div class="bezel-core tile-core">
+              <div class="tile-text">
+                <span class="tile-icon"><i class="ph-light ph-flower-lotus" aria-hidden="true"></i></span>
+                <h3>मन की शांति</h3>
+                <p>रोज़ मन का हाल पूछना, 10 सवालों की EPDS जाँच, 4-7-8 श्वास, डायरी और इंटरपर्सनल थेरेपी पर आधारित 8 हफ़्ते का सफ़र।</p>
+              </div>
+              <figure class="phone">
+                <img src="/assets/shots/hi/mind.webp" alt="मन की शांति स्क्रीन: मन का हाल चुनना, 8 हफ़्ते का सफ़र और EPDS जाँच" width="720" height="1398" loading="lazy">
+              </figure>
             </div>
-            <figure class="phone reveal">
-              <img src="/assets/shots/hi/mind.webp" alt="मन की शांति स्क्रीन: मन का हाल चुनना, 8 हफ़्ते का सफ़र और EPDS जाँच" width="720" height="1398" loading="lazy">
-            </figure>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section-warn" aria-labelledby="alert-title">
-      <div class="wrap showcase">
-        <div class="showcase-media">
-          <figure class="phone reveal">
-            <img src="/assets/shots/hi/alert.webp" alt="तुरंत ध्यान दें स्क्रीन: ख़तरे के संकेतों की सूची और इमरजेंसी कॉल बटन" width="720" height="1398" loading="lazy">
-          </figure>
-        </div>
-        <div>
-          <h2 id="alert-title">कुछ गड़बड़ लगे, तो Mam साफ़ बताता है</h2>
-          <p>एक टैप में ख़तरे के संकेत जाँचें। कोई भी संकेत हो, तो सीधे इमरजेंसी में जाएँ। यह फ़ोन पर ही चलता है, इंटरनेट की ज़रूरत नहीं।</p>
-          <ul class="points">
-            <li><i class="ph ph-warning" aria-hidden="true"></i><span>तेज़ सिरदर्द, धुंधला दिखना, दाईं पसलियों के नीचे दर्द, अचानक सूजन, ख़ून आना।</span></li>
-            <li><i class="ph ph-gauge" aria-hidden="true"></i><span>160/110 या उससे ज़्यादा ब्लड प्रेशर पर तुरंत चेतावनी।</span></li>
-            <li><i class="ph ph-lock-open" aria-hidden="true"></i><span>हमेशा मुफ़्त, कभी भी पेड योजना के पीछे बंद नहीं।</span></li>
-          </ul>
+    <section class="section section-flush" aria-labelledby="alert-title">
+      <div class="wrap">
+        <div class="slab slab-warn">
+          <div class="feature-row">
+            <div class="feature-media alert-media reveal">
+              <figure class="phone">
+                <img src="/assets/shots/hi/alert.webp" alt="तुरंत ध्यान दें स्क्रीन: ख़तरे के संकेतों की सूची और इमरजेंसी कॉल बटन" width="720" height="1398" loading="lazy">
+              </figure>
+            </div>
+            <div class="feature-copy">
+              <h2 id="alert-title" class="reveal">कुछ गड़बड़ लगे, तो Mam साफ़ बताता है</h2>
+              <p class="feature-body reveal">एक टैप में ख़तरे के संकेत जाँचें। कोई भी संकेत हो, तो सीधे इमरजेंसी में जाएँ। यह फ़ोन पर ही चलता है, इंटरनेट की ज़रूरत नहीं।</p>
+              <ul class="points points-warn">
+                <li class="reveal"><span class="point-icon"><i class="ph-light ph-warning" aria-hidden="true"></i></span><span>तेज़ सिरदर्द, धुंधला दिखना, दाईं पसलियों के नीचे दर्द, अचानक सूजन, ख़ून आना।</span></li>
+                <li class="reveal"><span class="point-icon"><i class="ph-light ph-gauge" aria-hidden="true"></i></span><span>160/110 या उससे ज़्यादा ब्लड प्रेशर पर तुरंत चेतावनी।</span></li>
+                <li class="reveal"><span class="point-icon"><i class="ph-light ph-lock-open" aria-hidden="true"></i></span><span>हमेशा मुफ़्त, कभी भी पेड योजना के पीछे बंद नहीं।</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="privacy" aria-labelledby="privacy-title">
+    <section id="privacy" class="section" aria-labelledby="privacy-title">
       <div class="wrap promise">
-        <div>
-          <h2 id="privacy-title">गर्भावस्था का डेटा आपका है</h2>
-          <p class="lead">Mam के लिए कोई खाता नहीं चाहिए। आपकी सारी जानकारी आपके फ़ोन पर रहती है, जब तक आप ख़ुद AI सुविधा का इस्तेमाल न करें।</p>
-          <a class="btn btn-ghost" href="/hi/privacy/">पूरी नीति पढ़ें</a>
+        <div class="promise-intro">
+          <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>गोपनीयता</p>
+          <h2 id="privacy-title" class="reveal">गर्भावस्था का डेटा आपका है</h2>
+          <p class="lead reveal">Mam के लिए कोई खाता नहीं चाहिए। आपकी सारी जानकारी आपके फ़ोन पर रहती है, जब तक आप ख़ुद AI सुविधा का इस्तेमाल न करें।</p>
+          <a class="btn btn-ghost reveal" href="/hi/privacy/"><span>पूरी नीति पढ़ें</span><span class="btn-icon btn-icon-dir" aria-hidden="true"><i class="ph-light ph-arrow-up-right"></i></span></a>
         </div>
-        <ul class="promise-list">
-          <li><i class="ph ph-device-mobile" aria-hidden="true"></i><div><strong>फ़ोन पर ही</strong><span>रीडिंग, डायरी और EPDS के नतीजे आपके फ़ोन से बाहर नहीं जाते।</span></div></li>
-          <li><i class="ph ph-eye-slash" aria-hidden="true"></i><div><strong>न बिक्री, न विज्ञापनों के लिए साझा</strong><span>विज्ञापन नेटवर्क को नहीं पता कि आप गर्भावस्था के किस हफ़्ते में हैं।</span></div></li>
-          <li><i class="ph ph-toggle-right" aria-hidden="true"></i><div><strong>AI सिर्फ़ आपकी मर्ज़ी से</strong><span>सवाल या खाने की फ़ोटो भेजना आप कभी भी बंद कर सकती हैं।</span></div></li>
-          <li><i class="ph ph-trash" aria-hidden="true"></i><div><strong>हटाया, तो हट गया</strong><span>ऐप के "आपका डेटा" सेक्शन में सारा डेटा एक बार में हटाएँ।</span></div></li>
+        <ul class="promise-grid">
+          <li class="bezel reveal"><div class="bezel-core promise-core"><i class="ph-light ph-device-mobile" aria-hidden="true"></i><strong>फ़ोन पर ही</strong><span>रीडिंग, डायरी और EPDS के नतीजे आपके फ़ोन से बाहर नहीं जाते।</span></div></li>
+          <li class="bezel reveal"><div class="bezel-core promise-core"><i class="ph-light ph-eye-slash" aria-hidden="true"></i><strong>न बिक्री, न विज्ञापनों के लिए साझा</strong><span>विज्ञापन नेटवर्क को नहीं पता कि आप गर्भावस्था के किस हफ़्ते में हैं।</span></div></li>
+          <li class="bezel reveal"><div class="bezel-core promise-core"><i class="ph-light ph-toggle-right" aria-hidden="true"></i><strong>AI सिर्फ़ आपकी मर्ज़ी से</strong><span>सवाल या खाने की फ़ोटो भेजना आप कभी भी बंद कर सकती हैं।</span></div></li>
+          <li class="bezel reveal"><div class="bezel-core promise-core"><i class="ph-light ph-trash" aria-hidden="true"></i><strong>हटाया, तो हट गया</strong><span>ऐप के "आपका डेटा" सेक्शन में सारा डेटा एक बार में हटाएँ।</span></div></li>
         </ul>
       </div>
     </section>
 
-    <section class="section-tint" aria-labelledby="plans-title">
+    <section class="section section-flush" aria-labelledby="plans-title">
       <div class="wrap">
-        <h2 id="plans-title">शुरुआत मुफ़्त</h2>
-        <p class="lead">सुरक्षा से जुड़ी सुविधाएँ हमेशा मुफ़्त हैं। Mam Plus उनके लिए है जो ज़्यादा इस्तेमाल करना चाहती हैं।</p>
+        <header class="section-head section-head-center">
+          <h2 id="plans-title" class="reveal">शुरुआत मुफ़्त</h2>
+          <p class="lead reveal">सुरक्षा से जुड़ी सुविधाएँ हमेशा मुफ़्त हैं। Mam Plus उनके लिए है जो ज़्यादा इस्तेमाल करना चाहती हैं।</p>
+        </header>
         <div class="plans">
-          <article class="plan">
-            <h3>मुफ़्त</h3>
-            <p class="price">मुफ़्त</p>
-            <ul>
-              <li>ब्लड प्रेशर, ब्लड शुगर और वज़न की निगरानी</li>
-              <li>ख़तरे के संकेतों की चेतावनी</li>
-              <li>हर दिन Mam से 3 सवाल और खाने की 2 फ़ोटो</li>
-              <li>2 जगह छोटे विज्ञापन</li>
-            </ul>
+          <article class="bezel plan reveal">
+            <div class="bezel-core plan-core">
+              <h3>मुफ़्त</h3>
+              <p class="price">मुफ़्त</p>
+              <ul>
+                <li>ब्लड प्रेशर, ब्लड शुगर और वज़न की निगरानी</li>
+                <li>ख़तरे के संकेतों की चेतावनी</li>
+                <li>हर दिन Mam से 3 सवाल और खाने की 2 फ़ोटो</li>
+                <li>2 जगह छोटे विज्ञापन</li>
+              </ul>
+            </div>
           </article>
-          <article class="plan plan-plus">
-            <h3>Mam Plus</h3>
-            <p class="price">मासिक या वार्षिक <small>कीमत App Store में दिखेगी</small></p>
-            <ul>
-              <li>हर दिन Mam से 30 सवाल और खाने की 30 फ़ोटो</li>
-              <li>आपकी रीडिंग की PDF रिपोर्ट (अभी अंग्रेज़ी में)</li>
-              <li>मीडियम और लॉक स्क्रीन विजेट, साथ में 7 और रंग थीम</li>
-              <li>कोई विज्ञापन नहीं</li>
-              <li>वार्षिक योजना में 7 दिन का मुफ़्त ट्रायल मिल सकता है</li>
-            </ul>
+          <article class="bezel plan plan-plus reveal">
+            <div class="bezel-core plan-core">
+              <h3>Mam Plus</h3>
+              <p class="price">मासिक या वार्षिक <small>कीमत App Store में दिखेगी</small></p>
+              <ul>
+                <li>हर दिन Mam से 30 सवाल और खाने की 30 फ़ोटो</li>
+                <li>आपकी रीडिंग की PDF रिपोर्ट (अभी अंग्रेज़ी में)</li>
+                <li>मीडियम और लॉक स्क्रीन विजेट, साथ में 7 और रंग थीम</li>
+                <li>कोई विज्ञापन नहीं</li>
+                <li>वार्षिक योजना में 7 दिन का मुफ़्त ट्रायल मिल सकता है</li>
+              </ul>
+            </div>
           </article>
         </div>
         <p class="note">आपके क्षेत्र की सही कीमत भुगतान से पहले ऐप में दिखती है। भुगतान और योजना रद्द करना App Store या Google Play से होता है।</p>
       </div>
     </section>
 
-    <section class="launch" aria-labelledby="launch-title">
+    <section class="section" aria-labelledby="launch-title">
       <div class="wrap">
-        <h2 id="launch-title">Mam मुफ़्त डाउनलोड करें</h2>
-        <p>iPhone के लिए। कोई खाता नहीं, ऐप खोलें और तुरंत शुरू करें।</p>
-        <a class="store-badge" href="https://apps.apple.com/app/id6834347996" rel="noopener">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store से डाउनलोड करें" width="180" height="60" loading="lazy">
-        </a>
+        <div class="slab launch">
+          <svg class="sprout sprout-launch" viewBox="0 0 120 160" aria-hidden="true" focusable="false"><path d="M60 158V70M60 92C60 60 38 42 10 44c0 28 20 48 50 48ZM60 76c0-30 22-50 50-48 0 30-22 48-50 48Z"/></svg>
+          <h2 id="launch-title" class="display reveal">Mam मुफ़्त डाउनलोड करें</h2>
+          <p class="reveal">iPhone के लिए। कोई खाता नहीं, ऐप खोलें और तुरंत शुरू करें।</p>
+          <a class="store-badge reveal" href="https://apps.apple.com/app/id6834347996" rel="noopener">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store से डाउनलोड करें" width="180" height="60" loading="lazy">
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="disclaimer" aria-label="ध्यान दें" style="padding-top: var(--space-section)">
+    <section class="disclaimer" aria-label="ध्यान दें">
       <div class="wrap">
         <div class="disclaimer-box">
-          <i class="ph ph-info" aria-hidden="true"></i>
+          <i class="ph-light ph-info" aria-hidden="true"></i>
           <p>Mam गर्भवती महिलाओं के लिए एक साथी ऐप है, जिसमें नोट्स रखने के टूल और संदर्भ जानकारी है; यह कोई मेडिकल सेवा नहीं है। तुरंत मदद चाहिए, तो <strong>108</strong> या <strong>112</strong> पर कॉल करें।</p>
         </div>
       </div>
@@ -265,12 +306,13 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© 2026 Mam. संपर्क: <a href="mailto:hotro@mambau.store">hotro@mambau.store</a></span>
+      <a class="brand brand-footer" href="/hi/"><img src="/assets/icon-128.png" alt="" width="28" height="28" loading="lazy"><span>Mam</span></a>
       <nav aria-label="फ़ुटर लिंक">
         <a href="/hi/privacy/">गोपनीयता नीति</a>
         <a href="/hi/terms/">उपयोग की शर्तें</a>
         <a href="/hi/support/">सहायता</a>
       </nav>
+      <p class="footer-meta">© 2026 Mam. संपर्क: <a href="mailto:hotro@mambau.store">hotro@mambau.store</a></p>
     </div>
   </footer>
 </body>

@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chính sách quyền riêng tư | Mầm</title>
   <meta name="description" content="Mầm thu thập gì, lưu ở đâu, gửi cho ai và quyền của mẹ với dữ liệu thai kỳ.">
-  <meta name="theme-color" content="#2f6b5e">
+  <meta name="theme-color" content="#f6f1e8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101814" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Chính sách quyền riêng tư | Mầm">
   <meta property="og:description" content="Mầm thu thập gì, lưu ở đâu, gửi cho ai và quyền của mẹ với dữ liệu thai kỳ.">
   <meta property="og:url" content="https://mambau.store/privacy/">
@@ -25,8 +26,8 @@
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css">
   <link rel="stylesheet" href="/assets/site.css">
 
 
@@ -36,14 +37,14 @@
   <a class="skip" href="#main">Bỏ qua, đến nội dung chính</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/"><img src="/assets/icon-128.png" alt="" width="36" height="36">Mầm</a>
+    <div class="nav-pill">
+      <a class="brand" href="/"><img src="/assets/icon-128.png" alt="" width="32" height="32"><span>Mầm</span></a>
       <nav class="nav" aria-label="Điều hướng chính">
         <a class="nav-optional" href="/#features">Tính năng</a>
         <a href="/privacy/" aria-current="page">Quyền riêng tư</a>
         <a href="/support/">Hỗ trợ</a>
         <details class="lang-menu">
-          <summary aria-label="Ngôn ngữ"><i class="ph ph-translate" aria-hidden="true"></i><span>VI</span></summary>
+          <summary aria-label="Ngôn ngữ"><i class="ph-light ph-translate" aria-hidden="true"></i><span>VI</span></summary>
           <ul>
             <li><a href="/privacy/" hreflang="vi" lang="vi" data-lang="vi" aria-current="true">Tiếng Việt</a></li>
             <li><a href="/en/privacy/" hreflang="en" lang="en" data-lang="en">English</a></li>
@@ -57,11 +58,12 @@
 
   <main id="main" class="doc">
     <div class="wrap">
+      <article class="doc-paper">
       <h1>Chính sách quyền riêng tư</h1>
-      <p class="meta">Có hiệu lực từ ngày 14/11/2026</p>
+      <p class="meta">Có hiệu lực từ ngày 16/11/2026</p>
 
       <div class="callout">
-        <p><strong>Tóm tắt:</strong> Mầm không có tài khoản. Số đo, nhật ký, bữa ăn và kết quả EPDS lưu trên điện thoại của mẹ. Chỉ khi mẹ dùng tính năng AI, câu hỏi hoặc ảnh món ăn mới được gửi đi để xử lý, và không bị lưu lại. Mầm không bán dữ liệu và không đưa dữ liệu sức khỏe cho mạng quảng cáo.</p>
+        <p><strong>Tóm tắt:</strong> Mầm không có tài khoản. Số đo, nhật ký, bữa ăn và kết quả EPDS lưu trên điện thoại của mẹ. Chỉ khi mẹ dùng tính năng AI, câu hỏi hoặc ảnh món ăn mới được gửi đi để xử lý, và không bị lưu lại. App gửi một số số liệu sử dụng ẩn danh (như màn hình nào được mở) để cải thiện Mầm, không kèm dữ liệu sức khỏe, và mẹ có thể tắt bất cứ lúc nào. Mầm không bán dữ liệu và không đưa dữ liệu sức khỏe cho mạng quảng cáo.</p>
       </div>
 
       <h2>1. Ai chịu trách nhiệm</h2>
@@ -100,10 +102,28 @@
       <p>Mỗi yêu cầu kèm một mã người dùng ngẫu nhiên do app tạo ra. Máy chủ chỉ lưu mã này ở dạng đã băm để đếm số lượt dùng trong ngày và kiểm tra gói Mầm Plus. Chúng tôi không thu thập tên, số điện thoại, email hay vị trí.</p>
       <p>Để tạo câu trả lời, nội dung trên được chuyển tới <strong>Anthropic, PBC</strong> (Hoa Kỳ), nhà cung cấp mô hình AI Claude. Theo điều khoản API của Anthropic, dữ liệu này không được dùng để huấn luyện mô hình. Đây là hoạt động chuyển dữ liệu ra nước ngoài. Mẹ có thể từ chối bằng cách tắt hai tùy chọn AI; app vẫn dùng được với câu trả lời soạn sẵn.</p>
 
-      <h2>4. Thanh toán và gói Mầm Plus</h2>
+      <h2>4. Số liệu sử dụng ẩn danh</h2>
+      <p>Để biết bước nào trong app gây khó hiểu và cải thiện Mầm, app gửi một số số liệu sử dụng ẩn danh về máy chủ của chúng tôi. Việc này chỉ diễn ra khi mẹ chưa tắt công tắc <em>Chia sẻ số liệu sử dụng ẩn danh</em>.</p>
+      <p>App chỉ gửi những thông tin sau:</p>
+      <ul>
+        <li>App được mở hoặc chuyển xuống chạy nền (kèm màn hình đang mở và thời lượng phiên dùng).</li>
+        <li>Màn hình chính nào được xem.</li>
+        <li>Bước giới thiệu ban đầu nào đã tới hoặc đã hoàn thành, hoặc mẹ đã mở bản dùng thử.</li>
+        <li>Màn hình gói Mầm Plus được hiển thị và lý do hiển thị, và việc mua gói thành công.</li>
+        <li>Kèm theo: ngôn ngữ app, quốc gia mẹ chọn lúc bắt đầu (hoặc "không rõ"), phiên bản app, nền tảng (iOS/Android), và cùng mã ngẫu nhiên của app đã dùng cho các yêu cầu AI. Máy chủ chỉ lưu mã này ở dạng đã băm.</li>
+      </ul>
+      <p>Khi mẹ dùng tính năng AI, máy chủ cũng ghi số liệu kỹ thuật cho mỗi yêu cầu: loại phản hồi (đã trả lời, từ chối, hướng dẫn khẩn cấp...), thời gian phản hồi, lỗi và ngôn ngữ. Số liệu này <strong>không</strong> chứa nội dung câu hỏi, câu trả lời hay ảnh.</p>
+      <p>App <strong>không bao giờ</strong> gửi: chỉ số huyết áp, đường huyết, cân nặng; nhật ký; kết quả EPDS; tên món ăn hay ảnh món ăn (ngoài tính năng AI đã nêu ở mục 3); tên, vị trí của mẹ hay bất kỳ nội dung nào mẹ tự gõ.</p>
+      <ul>
+        <li><strong>Nơi lưu:</strong> trên máy chủ của chính chúng tôi. Không bán, không chia sẻ cho nhà quảng cáo hay bên thứ ba. Mầm không dùng bộ công cụ (SDK) phân tích của bên thứ ba.</li>
+        <li><strong>Thời gian lưu:</strong> tự động xóa sau 90 ngày.</li>
+        <li><strong>Quyền kiểm soát:</strong> công tắc <em>Chia sẻ số liệu sử dụng ẩn danh</em> trong mục Quyền riêng tư của app được bật sẵn. Mẹ có thể tắt bất cứ lúc nào, và app ngừng gửi ngay khi tắt.</li>
+      </ul>
+
+      <h2>5. Thanh toán và gói Mầm Plus</h2>
       <p>Thanh toán do Apple App Store hoặc Google Play xử lý; chúng tôi không nhận thông tin thẻ. Trạng thái gói được xác minh qua <strong>RevenueCat</strong> (Hoa Kỳ) bằng mã người dùng ẩn danh. Chúng tôi không gửi tuần thai hay thông tin sức khỏe cho RevenueCat.</p>
 
-      <h2>5. Quảng cáo</h2>
+      <h2>6. Quảng cáo</h2>
       <p>Bản miễn phí hiển thị quảng cáo <strong>không cá nhân hóa</strong> qua Google AdMob ở hai vị trí: cuối trang Hôm nay và cuối trang Bữa ăn. AdMob có thể dùng mã định danh thiết bị và thông tin kỹ thuật để phân phối và chống gian lận quảng cáo, theo <a href="https://policies.google.com/privacy" rel="noopener">chính sách của Google</a>.</p>
       <ul>
         <li>Mầm không xin quyền theo dõi (ATT) và không gửi dữ liệu sức khỏe, tuần thai hay câu hỏi cho mạng quảng cáo.</li>
@@ -111,41 +131,44 @@
         <li>Không hiển thị quảng cáo cho người dùng dưới 18 tuổi. Mầm Plus không có quảng cáo.</li>
       </ul>
 
-      <h2>6. Những gì Mầm không làm</h2>
+      <h2>7. Những gì Mầm không làm</h2>
       <ul>
         <li>Không bán, cho thuê hay trao đổi dữ liệu cá nhân.</li>
-        <li>Không dùng công cụ phân tích hành vi hay theo dõi quảng cáo của bên thứ ba.</li>
+        <li>Không dùng bộ công cụ (SDK) phân tích hay theo dõi của bên thứ ba. Số liệu sử dụng do chính Mầm thu thập, ẩn danh, và không chia sẻ cho ai (xem mục 4).</li>
         <li>Không dùng vị trí của mẹ.</li>
       </ul>
 
-      <h2>7. Quyền của mẹ</h2>
+      <h2>8. Quyền của mẹ</h2>
       <p>Theo Luật Bảo vệ dữ liệu cá nhân của Việt Nam và các luật nơi mẹ sinh sống, mẹ có quyền được biết, đồng ý hoặc rút lại đồng ý, truy cập, chỉnh sửa, xóa và yêu cầu hạn chế xử lý dữ liệu. Trong app:</p>
       <ul>
         <li><strong>Tải về toàn bộ dữ liệu:</strong> mục Quyền riêng tư.</li>
         <li><strong>Xóa toàn bộ dữ liệu:</strong> mục Quyền riêng tư, hoặc gỡ app. Thao tác này không khôi phục được.</li>
         <li><strong>Rút lại đồng ý dùng AI:</strong> tắt hai công tắc gửi câu hỏi và gửi ảnh.</li>
+        <li><strong>Ngừng chia sẻ số liệu sử dụng:</strong> tắt công tắc <em>Chia sẻ số liệu sử dụng ẩn danh</em>.</li>
       </ul>
       <p>Với các yêu cầu khác, kể cả xóa bộ đếm lượt dùng trên máy chủ, hãy gửi email tới <a href="mailto:hotro@mambau.store">hotro@mambau.store</a>. Chúng tôi phản hồi trong vòng 30 ngày.</p>
 
-      <h2>8. Trẻ vị thành niên</h2>
+      <h2>9. Trẻ vị thành niên</h2>
       <p>Người dùng dưới 16 tuổi cần có sự đồng ý của cha mẹ hoặc người giám hộ trước khi dùng Mầm.</p>
 
-      <h2>9. Bảo mật</h2>
+      <h2>10. Bảo mật</h2>
       <p>Kết nối tới máy chủ luôn mã hóa HTTPS. Mã người dùng được băm trước khi lưu. Nếu xảy ra sự cố lộ dữ liệu, chúng tôi sẽ thông báo cho cơ quan có thẩm quyền và người dùng bị ảnh hưởng theo thời hạn luật định.</p>
 
-      <h2>10. Thay đổi chính sách</h2>
+      <h2>11. Thay đổi chính sách</h2>
       <p>Khi có thay đổi, chúng tôi cập nhật trang này và ngày hiệu lực ở đầu trang. Với thay đổi quan trọng về cách dùng dữ liệu, chúng tôi sẽ xin lại sự đồng ý của mẹ.</p>
+      </article>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© 2026 Mầm. Liên hệ: <a href="mailto:hotro@mambau.store">hotro@mambau.store</a></span>
+      <a class="brand brand-footer" href="/"><img src="/assets/icon-128.png" alt="" width="28" height="28" loading="lazy"><span>Mầm</span></a>
       <nav aria-label="Liên kết cuối trang">
         <a href="/privacy/">Chính sách quyền riêng tư</a>
         <a href="/terms/">Điều khoản sử dụng</a>
         <a href="/support/">Hỗ trợ</a>
       </nav>
+      <p class="footer-meta">© 2026 Mầm. Liên hệ: <a href="mailto:hotro@mambau.store">hotro@mambau.store</a></p>
     </div>
   </footer>
 </body>

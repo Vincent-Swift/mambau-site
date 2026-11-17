@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy | Mam</title>
   <meta name="description" content="What Mam collects, where it is stored, who it is sent to, and your rights over your pregnancy data.">
-  <meta name="theme-color" content="#2f6b5e">
+  <meta name="theme-color" content="#f6f1e8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101814" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Privacy Policy | Mam">
   <meta property="og:description" content="What Mam collects, where it is stored, who it is sent to, and your rights over your pregnancy data.">
   <meta property="og:url" content="https://mambau.store/en/privacy/">
@@ -25,8 +26,8 @@
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css">
   <link rel="stylesheet" href="/assets/site.css">
 
 
@@ -36,14 +37,14 @@
   <a class="skip" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/en/"><img src="/assets/icon-128.png" alt="" width="36" height="36">Mam</a>
+    <div class="nav-pill">
+      <a class="brand" href="/en/"><img src="/assets/icon-128.png" alt="" width="32" height="32"><span>Mam</span></a>
       <nav class="nav" aria-label="Main navigation">
         <a class="nav-optional" href="/en/#features">Features</a>
         <a href="/en/privacy/" aria-current="page">Privacy</a>
         <a href="/en/support/">Support</a>
         <details class="lang-menu">
-          <summary aria-label="Language"><i class="ph ph-translate" aria-hidden="true"></i><span>EN</span></summary>
+          <summary aria-label="Language"><i class="ph-light ph-translate" aria-hidden="true"></i><span>EN</span></summary>
           <ul>
             <li><a href="/privacy/" hreflang="vi" lang="vi" data-lang="vi">Tiếng Việt</a></li>
             <li><a href="/en/privacy/" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a></li>
@@ -57,11 +58,12 @@
 
   <main id="main" class="doc">
     <div class="wrap">
+      <article class="doc-paper">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective November 14, 2026</p>
+      <p class="meta">Effective November 16, 2026</p>
 
       <div class="callout">
-        <p><strong>Summary:</strong> Mam has no accounts. Your readings, journal, meals and EPDS results are stored on your phone. Only when you use the AI features is your question or meal photo sent out for processing, and it is not kept. Mam does not sell data and does not give health data to ad networks.</p>
+        <p><strong>Summary:</strong> Mam has no accounts. Your readings, journal, meals and EPDS results are stored on your phone. Only when you use the AI features is your question or meal photo sent out for processing, and it is not kept. The app sends some anonymous usage statistics (such as which screens are opened) to help improve Mam, with no health data, and you can turn this off at any time. Mam does not sell data and does not give health data to ad networks.</p>
       </div>
 
       <h2>1. Who is responsible</h2>
@@ -100,10 +102,28 @@
       <p>Each request includes a random user ID created by the app. The server stores this ID only in hashed form, to count daily usage and check Mam Plus status. We do not collect your name, phone number, email or location.</p>
       <p>To generate answers, the data above is sent to <strong>Anthropic, PBC</strong> (USA), provider of the Claude AI model. Under Anthropic's API terms, this data is not used to train models. This is an international data transfer. You can decline it by turning off the two AI options; the app still works with prewritten answers.</p>
 
-      <h2>4. Payments and Mam Plus</h2>
+      <h2>4. Anonymous usage statistics</h2>
+      <p>To understand which steps in the app are confusing and to improve Mam, the app sends some anonymous usage statistics to our server. This only happens if you have not turned off the <em>Share anonymous usage statistics</em> switch.</p>
+      <p>The app sends only the following:</p>
+      <ul>
+        <li>That the app was opened or went to the background (with the screen that was open and the session length).</li>
+        <li>Which main screen was viewed.</li>
+        <li>Which onboarding step was reached or completed, or that the demo was opened.</li>
+        <li>That the Mam Plus paywall was shown and why, and that a purchase succeeded.</li>
+        <li>Along with: app language, the country you chose during onboarding (or "unknown"), app version, platform (iOS/Android), and the same random app ID already used for AI requests. Our server stores this ID only in hashed form.</li>
+      </ul>
+      <p>When you use the AI features, the server also records technical statistics for each request: the type of response (answered, refused, emergency guidance and so on), response time, errors and language. These statistics do <strong>not</strong> include your question, the answer or your photo.</p>
+      <p>The app <strong>never</strong> sends: blood pressure, blood sugar or weight readings; your journal; EPDS results; meal names or photos (outside the AI feature described in section 3); your name, your location, or any text you type.</p>
+      <ul>
+        <li><strong>Where it is stored:</strong> on our own server. It is not sold and not shared with advertisers or other third parties. Mam uses no third-party analytics SDKs.</li>
+        <li><strong>Retention:</strong> deleted automatically after 90 days.</li>
+        <li><strong>Your control:</strong> the <em>Share anonymous usage statistics</em> switch in the app's privacy screen is on by default. You can turn it off at any time, and sending stops immediately.</li>
+      </ul>
+
+      <h2>5. Payments and Mam Plus</h2>
       <p>Payments are handled by the Apple App Store or Google Play; we never receive your card details. Subscription status is verified through <strong>RevenueCat</strong> (USA) using an anonymous user ID. We do not send your pregnancy week or health information to RevenueCat.</p>
 
-      <h2>5. Advertising</h2>
+      <h2>6. Advertising</h2>
       <p>The free version shows <strong>non-personalized</strong> ads through Google AdMob in two places: the end of the Today page and the end of the Meals page. AdMob may use device identifiers and technical information to deliver ads and prevent ad fraud, under <a href="https://policies.google.com/privacy" rel="noopener">Google's policy</a>.</p>
       <ul>
         <li>Mam does not ask for tracking permission (ATT) and does not send health data, pregnancy week or questions to ad networks.</li>
@@ -111,41 +131,44 @@
         <li>No ads for users under 18. Mam Plus has no ads.</li>
       </ul>
 
-      <h2>6. What Mam does not do</h2>
+      <h2>7. What Mam does not do</h2>
       <ul>
         <li>No selling, renting or trading of personal data.</li>
-        <li>No third-party analytics or ad tracking tools.</li>
+        <li>No third-party analytics or tracking SDKs. Usage statistics are collected by Mam itself, anonymously, and never shared (see section 4).</li>
         <li>No use of your location.</li>
       </ul>
 
-      <h2>7. Your rights</h2>
+      <h2>8. Your rights</h2>
       <p>Under Vietnam's Personal Data Protection Law and the laws where you live, you have the right to be informed, to consent or withdraw consent, and to access, correct, delete and restrict the processing of your data. In the app:</p>
       <ul>
         <li><strong>Download all my data:</strong> "Your data" screen.</li>
         <li><strong>Delete all your data:</strong> "Your data" screen, or uninstall the app. This cannot be undone.</li>
         <li><strong>Withdraw consent to AI:</strong> turn off the two switches for sending questions and sending photos.</li>
+        <li><strong>Stop sharing usage statistics:</strong> turn off the <em>Share anonymous usage statistics</em> switch.</li>
       </ul>
       <p>For any other request, including deleting the usage counter on our server, email <a href="mailto:hotro@mambau.store">hotro@mambau.store</a>. We reply within 30 days.</p>
 
-      <h2>8. Children</h2>
+      <h2>9. Children</h2>
       <p>Users under 16 need consent from a parent or guardian before using Mam. Mam is not directed to children under 13, and we do not knowingly collect personal information from them.</p>
 
-      <h2>9. Security</h2>
+      <h2>10. Security</h2>
       <p>Connections to our server are always encrypted with HTTPS. User IDs are hashed before storage. If a data breach occurs, we will notify the competent authorities and affected users within the time required by law.</p>
 
-      <h2>10. Changes to this policy</h2>
+      <h2>11. Changes to this policy</h2>
       <p>When this policy changes, we update this page and the effective date at the top. For important changes to how we use data, we will ask for your consent again.</p>
+      </article>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© 2026 Mam. Contact: <a href="mailto:hotro@mambau.store">hotro@mambau.store</a></span>
+      <a class="brand brand-footer" href="/en/"><img src="/assets/icon-128.png" alt="" width="28" height="28" loading="lazy"><span>Mam</span></a>
       <nav aria-label="Footer links">
         <a href="/en/privacy/">Privacy Policy</a>
         <a href="/en/terms/">Terms of Use</a>
         <a href="/en/support/">Support</a>
       </nav>
+      <p class="footer-meta">© 2026 Mam. Contact: <a href="mailto:hotro@mambau.store">hotro@mambau.store</a></p>
     </div>
   </footer>
 </body>
